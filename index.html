@@ -6,9 +6,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stronger Voice DOM App</title>
   <link rel='stylesheet' href='node_modules/bootstrap/dist/css/bootstrap.css'>
+  <link rel='stylesheet' href='styles.css'>
 </head>
-<body>
-  
+<body class='container'>
+  <br />
+  <div class='card'>
+    <div class='card-body'>
+      <h1 class='py-5 text-center'> Stronger Voice Exercises</h1>
+      <br />
+      <div class='row'>
+        <!-- <div class='col-md-3'>
+          <div class='form-group'>
+            <label for='ex-date'>Date</label>
+            <input type='date' class='form-control' id='ex-date'>
+          </div>
+        </div> -->
+        <div class='col-md-4'>
+          <div class='form-group'>
+            <label for='ex-target'>Choose Your Voice Target</label>
+            <input type='text' class='form-control-lg' id='ex-target' placeholder='target'>
+            <!-- <select class='custom-select custom-select-lg'>
+              <option selected>Choose Your Voice Target</option>
+              <option value='1'>Loudness</option>
+              <option value='2'>Duration</option>
+              <option value='3'>Pitch</option>
+            </select>  -->
+          </div>
+        </div>
+        <div class='col-md-4'>
+          <div class='form-group'>
+            <label for='ex-completed'>Choose Your Exercise</label>
+            <input type='text' class='form-control-lg' id='ex-completed' placeholder='exercise'>
+          </div>
+          <br />
+        </div>
+        <!-- <div class='col-md-3'>
+          <div class='form-group'>
+            <label for='ex-achieved'>Achieved</label>
+            <input type='text' class='form-control' id='ex-achieved' placeholder='achieved'>
+          </div>
+        </div> -->
+        <div class='col-md-4'>
+          <div class='form-group'>
+            <!-- <span class='placeholder bg-secondary'></span> -->
+            <label for='ex-performance'>How'd You Do?</label>
+            <input type='text' class='form-control-lg' id='ex-performance' placeholder='performance'>
+          </div>
+          <br />
+        </div>
+      </div>
+      <div>
+        <button id='add' class='btn btn-primary form-control'>Add</button>
+      </div>
+    </div>
+  </div>
+  <!-- table for user to add/delete rows of Exercises -->
+  <!-- TODO: spacing of <th> elements -->
+  <table id='list' class='table table-striped'>
+      <tr>
+        <th>Date</th>
+        <th>Voice Target</th>
+        <th>Exercise</th>
+        <th>Performance</th>
+        <th>Delete</th>
+      </tr>
+  </table>
   <script src='app.js'></script>
   <script src='node_modules/bootstrap/dist/js/bootstrap.bundle.js'></script>
 </body>
