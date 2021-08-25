@@ -1,0 +1,22 @@
+{
+  "name": "stronger_voice-dom_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thisLinda/stronger_voice-dom_app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thisLinda/stronger_voice-dom_app/issues"
+  },
+  "homepage": "https://github.com/thisLinda/stronger_voice-dom_app#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.0"
+  }
+}
