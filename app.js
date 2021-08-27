@@ -12,16 +12,12 @@ document.getElementById('add').addEventListener('click', () => {
   let actions = row.insertCell(4);
   actions.appendChild(createDeleteButton(id++));
   // resetting fields for a good user experience
-  // document.getElementsById('ex-target', 'ex-performance', 'ex-completed').value = '';
-  // document.getElementById('ex-target').value = '';
-  // document.getElementById('ex-performance').value = '';
-  // document.getElementById('ex-completed').value = '';
+  // https://discuss.codecademy.com/t/can-we-access-multiple-dom-elements-at-the-same-time/365071 to select multiple elements in form in clear on click
   let selectByClassNameElements = document.getElementsByClassName('form-control-lg');
   for (let i = 0; i < selectByClassNameElements.length; i++) {
-    selectByClassNameElements[i].innerHTML = '';
-    console.log(selectByClassNameElements[i].innerHTML);
+    selectByClassNameElements[i].value = '';
+    console.log(selectByClassNameElements[i].value);
   }
-  // console.log(document.getElementsByClassName('form-control-lg'))
 });
 
 // deletes a specific task by id created above

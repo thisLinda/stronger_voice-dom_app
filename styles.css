@@ -1,5 +1,15 @@
-.card
- {
-    height: 500px;
+.card {
     background-image: url('https://physicsworld.com/wp-content/uploads/2018/12/PWDec18REV-speech_HERO-1024x576.jpg');
+    height: 50%;
 }
+
+.form-group {
+    font-size: medium;
+}
+
+/* .card {
+    align-content: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+} */
